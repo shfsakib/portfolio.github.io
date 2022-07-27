@@ -48,7 +48,7 @@ const TopNav = ({
                   id='dropdown-profile'
                   className='dropdown-basic'
                 >
-                  <img src='/dist/img/user-pro.png' />
+                  <img src='../dist/img/user-pro.png' />
                 </Dropdown.Toggle>
                 <Dropdown.Menu className='drop-profile'>
                   <Dropdown.Item as={Link} to='/edit-profile'>

@@ -12,7 +12,7 @@ const SideBar = ({ sideMenu, currentUser }) => {
             <div className={`side-bar ${sideMenu ? '' : 'close'}`}>
                 <div className="logo-content">
                     <Link to="/dashboard" className="brand-link">
-                        <img src="/dist/img/house.png" alt="logo" />
+                        <img src="../dist/img/house.png" alt="logo" />
                         {/* <i className="fas fa-building"></i> */}
                         <div className="logo-name">RMS</div>
                         {/* <i className="fas fa-bars" id="btn-bar"></i> */}
