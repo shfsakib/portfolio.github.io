@@ -1,0 +1,17 @@
+@media screen and (min-width: 0) and (max-width: 992px) {
+  body,
+  #root {
+    overflow: hidden;
+    overflow-x: auto;
+  }
+  .side-bar.close ~ .home-section{
+    left: 0px!important;
+    width: calc(100% - 0px)!important;
+    min-width: 225px;
+  }
+  .side-bar ~ .home-section{
+    left: 280px!important;
+    width: calc(100% - 280px)!important;
+    min-width: 225px;
+  }
+}
