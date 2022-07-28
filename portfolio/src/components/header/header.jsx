@@ -1,18 +1,23 @@
 import React, { Fragment } from 'react'
 import CTA from './CTA'
 import './header.css'
+import HeaderSocials from './HeaderSocials'
 const Header = () => {
     return (
         <Fragment>
-            <div className="container header__container">
-                <h5>Hello I'm</h5>
-                <h1>Mohammad Sakib Hossain</h1>
-                <h5 className="text-light">Fullstack Developer</h5>
-                <CTA />
-                <div className="me">
-                    <img src="" alt="" />
+            <header>
+                <div className="container header__container">
+                    <h3>Hello I'm</h3>
+                    <h1>Mohammad Sakib Hossain</h1>
+                    <h3 className="text-light">Fullstack Developer</h3>
+                    <CTA />
+                    <HeaderSocials />
+                    <div className="me">
+                        <img src="./dist/img/mypic5.png" alt="My Image" />
+                    </div>
+                    <a href="#contact" className='scroll_down'>Scroll Down</a>
                 </div>
-            </div>
+            </header>
         </Fragment>
     )
 }

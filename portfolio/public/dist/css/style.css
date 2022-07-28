@@ -39,6 +39,9 @@ body {
   width: var(--container-width-lg);
   margin: 0 auto;
 }
+.bg-white {
+  background-color: var(--color-white);
+}
 h1,
 h2,
 h3,
@@ -50,9 +53,12 @@ h1 {
   font-size: 2.5rem;
 }
 section {
-  margin-top: 8rem;
+  margin-top: 8rem; 
 }
+section > h1,
 section > h2,
+section > h3,
+section > h4,
 section > h5 {
   text-align: center;
   color: var(--color-light);
