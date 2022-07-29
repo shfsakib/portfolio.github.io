@@ -24,6 +24,7 @@
   place-items: center;
 }
 .about__me-image {
+  width: 100%;
   border-radius: 2rem;
   overflow: hidden;
   transform: rotate(10deg);
@@ -89,7 +90,7 @@
     margin: 0 auto 3rem;
   }
   .about__cards {
-    grid-template-columns:auto;
+    grid-template-columns: auto;
     gap: 1rem;
   }
   .about_content {
