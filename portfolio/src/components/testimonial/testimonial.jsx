@@ -9,7 +9,7 @@ const Testimonial = () => {
       <div className="container testimonials__container">
         <article className="testimonial">
           <div className="client__avatar">
-            <img src="./dist/img/shuieb.png" alt="avatar 1" />
+            <img src="./dist/img/shueib.png" alt="avatar 1" />
           </div>
         </article>
       </div>
