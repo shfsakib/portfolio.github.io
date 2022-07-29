@@ -19,10 +19,10 @@ const Footer = () => {
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div className="footer__socials">
-                <a href="https://www.facebook.com/shfsakib"><FaFacebookF /></a>
-                <a href="https://wa.me/8801685685506"><FaWhatsapp /></a>
-                <a href="https://www.instagram.com/shfsakib/"><FiInstagram /></a>
-                <a href="https://twitter.com/shf_sakib"><FiTwitter /></a>
+                <a href="https://www.facebook.com/shfsakib" target='_blank'><FaFacebookF /></a>
+                <a href="https://wa.me/8801685685506" target='_blank'><FaWhatsapp /></a>
+                <a href="https://www.instagram.com/shfsakib/" target='_blank'><FiInstagram /></a>
+                <a href="https://twitter.com/shf_sakib" target='_blank'><FiTwitter /></a>
             </div>
             <div className="footer__copyright">
                 <small>&copy; Mohammad Sakib Hossain. All rights reserver</small>
