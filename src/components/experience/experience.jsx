@@ -51,7 +51,7 @@ const Experience = () => {
           <div className="experience__content">
             <article className='experience__details'>
               <i className="fas fa-certificate experience__details-icon"></i>
-              <div>  <h4>C#</h4>
+              <div>  <h4>ASP.Net C#</h4>
                 <small className='text-light'>Experienced</small> </div>
             </article>
             <article className='experience__details'>
