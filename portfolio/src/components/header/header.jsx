@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react'
 import CTA from './CTA'
-import '/header.css'
 import HeaderSocials from './HeaderSocials'
 const Header = () => {
     return (
