@@ -1,95 +1,97 @@
 header {
+  min-height: 100vh;
+  padding-top: 3rem;
+  /* overflow: hidden; */
+}
+.header__container {
+  text-align: center;
+  height: 100%;
+  position: relative;
+}
+
+/* cta */
+.cta {
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+}
+/* header social */
+.header__socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  position: absolute;
+  left: 0;
+  bottom: 3rem;
+}
+.header__socials ::after {
+  content: "";
+  width: 1px;
+  height: 2rem;
+  background: var(--color-primary);
+}
+.me {
+  background: linear-gradient(var(--color-primary), transparent);
+  width: 22rem;
+  height: 30rem;
+  position: relative;
+  left: calc(50% - 11rem);
+  margin-top: 4rem;
+  /* border-radius: 12rem 12rem 0 0; */
+  border-radius: 4rem 4rem 0 0;
+  overflow: hidden;
+  padding: 5rem 1.5rem 1.5rem 1.5rem;
+}
+.me img {
+  position: absolute;
+  bottom: 0;
+  left: 0rem;
+}
+.scroll_down {
+  position: absolute;
+  right: -2.3rem;
+  bottom: 5rem;
+  transform: rotate(90deg);
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+.header__socials a img {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+.header__socials a img:hover {
+  opacity: 1;
+}
+.githubImg {
+  border-radius: 50%;
+  background-color: var(--color-white);
+  border: none;
+}
+/* media query medium device */
+@media screen and (max-width: 1024px) {
+  header {
     min-height: 100vh;
-    padding-top: 7rem;
-    overflow: hidden;
-  }
-  .header__container {
-    text-align: center;
-    height: 100%;
-    position: relative;
-  }
-  
-  /* cta */
-  .cta {
-    margin-top: 2.5rem;
-    display: flex;
-    gap: 1.2rem;
-    justify-content: center;
-  }
-  /* header social */
-  .header__socials {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.8rem;
-    position: absolute;
-    left: 0;
-    bottom: 3rem;
-  }
-  .header__socials ::after {
-    content: "";
-    width: 1px;
-    height: 2rem;
-    background: var(--color-primary);
+    padding-top: 2rem;
   }
   .me {
-    background: linear-gradient(var(--color-primary), transparent);
-    width: 22rem;
-    height: 30rem;
-    position: absolute;
-    left: calc(50% - 11rem);
-    margin-top: 4rem;
-    border-radius: 12rem 12rem 0 0;
-    overflow: hidden;
-    padding: 5rem 1.5rem 1.5rem 1.5rem;
+    margin-top: 2rem;
   }
-  .me img {
-    position: absolute;
-    bottom: 0;
-    left: 0rem;
+}
+/* media for small device */
+@media screen and (max-width: 600px) {
+  header {
+    /* height: 100vh; */
+    padding-top: 5rem;
   }
+  .header__socials,
   .scroll_down {
-    position: absolute;
-    right: -2.3rem;
-    bottom: 5rem;
-    transform: rotate(90deg);
-    font-weight: 300;
-    font-size: 0.9rem;
+    display: none;
   }
-  .header__socials a img {
-    height: 25px;
-    width: 25px;
-    border-radius: 50%;
-    opacity: 0.7;
-  }
-  .header__socials a img:hover {
-    opacity: 1;
-  }
-  .githubImg {
-    border-radius: 50%;
-    background-color: var(--color-white);
-    border: none;
-  }
-  /* media query medium device */
-  @media screen and (max-width: 1024px) {
-    header {
-      height: 100vh;
-    } 
-    .me{
-      margin-top: 2rem;
-    }
-  }
-  /* media for small device */
-  @media screen and (max-width: 600px) {
-    header {
-      height: 100vh;
-      padding-top: 5rem;
-    }
-    .header__socials,
-    .scroll_down {
-      display: none;
-    }
-    /* .me {
+  /* .me {
       bottom: 0;
       height: 15rem;
       width: 12rem;
@@ -98,16 +100,15 @@ header {
     .me img{
       bottom: -2rem;
     } */
+}
+@media screen and (max-width: 380px) {
+  .me {
+    bottom: 0;
+    height: 15rem;
+    width: 12rem;
+    left: calc(50% - 6rem);
   }
-  @media screen and (max-width: 380px) {
-    .me {
-      bottom: 0;
-      height: 15rem;
-      width: 12rem;
-      left: calc(50% - 6rem);
-    }
-    .me img {
-      bottom: -2rem;
-    }
+  .me img {
+    bottom: -2rem;
   }
-  
+}
