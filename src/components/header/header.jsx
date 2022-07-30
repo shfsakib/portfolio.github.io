@@ -14,7 +14,7 @@ const Header = () => {
                     <div className="me">
                         <img src="./dist/img/mypic5.png" alt="My Image" />
                     </div>
-                    <a href="#contact" className='scroll_down'>Scroll Down</a>
+                    <a href="#contact" className='scroll_down'>Scroll Bottom</a>
                 </div>
             </header>
         </Fragment>
